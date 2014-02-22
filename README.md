@@ -16,48 +16,48 @@ Example:
 
 Present authorization web view.
 
-      BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
-      [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
-        dispatch_async(dispatch_get_main_queue(), ^{
-          UIViewController *viewController = [NSObject authorizationWebViewControllerWithURL:URL];
-          UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-          [self presentViewController:navigationController animated:YES completion:nil];
-        });
-      }];
+    BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
+    [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
+      dispatch_async(dispatch_get_main_queue(), ^{
+        UIViewController *viewController = [NSObject authorizationWebViewControllerWithURL:URL];
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+        [self presentViewController:navigationController animated:YES completion:nil];
+      });
+    }];
     
 
 Provide consumer key and secret.  
 
-      - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
-        BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
-        developerCredentials.consumerKey = CONSUMER_KEY;
-        developerCredentials.consumerSecret = CONSUMER_SECRET;
-        return developerCredentials;
-      }
+    - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
+      BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
+      developerCredentials.consumerKey = CONSUMER_KEY;
+      developerCredentials.consumerSecret = CONSUMER_SECRET;
+      return developerCredentials;
+    }
 
 Forward authorization web view callback URL.
 
-      - (BOOL)application:(UIApplication *)application
-                  openURL:(NSURL *)url
-        sourceApplication:(NSString *)sourceApplication
-               annotation:(id)annotation {
+    - (BOOL)application:(UIApplication *)application
+                openURL:(NSURL *)url
+      sourceApplication:(NSString *)sourceApplication
+             annotation:(id)annotation {
     
-          [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
-          return YES;
-      }
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
+      return YES;
+    }
 
 Save credentials and use to make API method calls.
 
     - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
       didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
-        [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
-        [self dismissViewControllerAnimated:YES completion:nil];
-        [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
-                                     usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
-                                 developerCredentials:[BSViewController developerCredentials]
-                                 andCompletionHandler:^(NSArray *activity) {
+      [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
+      [self dismissViewControllerAnimated:YES completion:nil];
+      [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
+                                   usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
+                               developerCredentials:[BSViewController developerCredentials]
+                               andCompletionHandler:^(NSArray *activity) {
                                  
-                              }];
-      }
+      }];
+    }
 
