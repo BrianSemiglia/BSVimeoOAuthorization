@@ -1,9 +1,8 @@
 BSVimeoOAuthorization
 =====================
 
-A Vimeo OAuth Objective-C adapter. I'm still in the process to organizing things but feel free to have a look.
+A Vimeo OAuth Objective-C adapter. I'm still in the process to organizing things but feel free to have a look. Here are some directions to get you started.
 
-Usage:
 1.First, you'll need to add your Vimeo App 'Callback URL' scheme to your iOS app URL types (https://dev.twitter.com/docs/cards/ios/url-scheme-configuration).
 
 2.Present authorization web view.
