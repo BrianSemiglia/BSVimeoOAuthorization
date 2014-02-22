@@ -14,6 +14,8 @@ Usage:
   
 Example:
 
+1. Present authorization web view.
+
     BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
     [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
       dispatch_async(dispatch_get_main_queue(), ^{
@@ -23,7 +25,8 @@ Example:
       });
     }];
     
-    
+
+2. Provide consumer key and secret.  
     - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
       BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
       developerCredentials.consumerKey = CONSUMER_KEY;
@@ -31,6 +34,7 @@ Example:
       return developerCredentials;
     }
 
+3. Forward authorization web view callback URL.
     - (BOOL)application:(UIApplication *)application
                 openURL:(NSURL *)url
       sourceApplication:(NSString *)sourceApplication
@@ -40,6 +44,7 @@ Example:
         return YES;
     }
 
+4. Save credentials and use to make API method calls.
     - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
       didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
