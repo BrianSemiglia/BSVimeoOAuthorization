@@ -7,7 +7,8 @@ A Vimeo OAuth Objective-C adapter. I'm still in the process of organizing things
 
 2.Present authorization web view.
 
-    BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
+    // BSVimeoAuthorizationController instance must be kept alive until access credentials are returned.
+    self.vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
     [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
       dispatch_async(dispatch_get_main_queue(), ^{
         UIViewController *viewController = [NSObject authorizationWebViewControllerWithURL:URL];
