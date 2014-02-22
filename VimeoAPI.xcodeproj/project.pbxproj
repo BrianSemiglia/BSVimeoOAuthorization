@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		754F37887A65465987737118 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19611416633540ACB6F2AB97 /* libPods.a */; };
+		BF80CDE80DF14A73AF4C0971 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19611416633540ACB6F2AB97 /* libPods.a */; };
+		D34C8C7418B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C8C7318B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m */; };
+		D34C8C7518B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C8C7318B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m */; };
+		D34C8C7918B455550032BE5A /* BSVImeoURLRequestTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D34C8C7818B455550032BE5A /* BSVImeoURLRequestTest.m */; };
+		D36978C318B0547F0075B578 /* BSVimeoAccessCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978C218B0547F0075B578 /* BSVimeoAccessCredentials.m */; };
+		D36978C418B0547F0075B578 /* BSVimeoAccessCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978C218B0547F0075B578 /* BSVimeoAccessCredentials.m */; };
+		D36978C718B057D00075B578 /* BSVimeoRequestCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978C618B057D00075B578 /* BSVimeoRequestCredentials.m */; };
+		D36978C818B057D00075B578 /* BSVimeoRequestCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978C618B057D00075B578 /* BSVimeoRequestCredentials.m */; };
+		D36978CB18B061B00075B578 /* BSVimeoAuthorizationCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978CA18B061B00075B578 /* BSVimeoAuthorizationCredentials.m */; };
+		D36978CC18B061B00075B578 /* BSVimeoAuthorizationCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978CA18B061B00075B578 /* BSVimeoAuthorizationCredentials.m */; };
+		D36978CF18B069250075B578 /* NSObject+WebViewCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978CE18B069250075B578 /* NSObject+WebViewCreation.m */; };
+		D36978D018B069250075B578 /* NSObject+WebViewCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D36978CE18B069250075B578 /* NSObject+WebViewCreation.m */; };
+		D37FB29218B2A66A00032D77 /* NSObject+VimeoMethodCalling.m in Sources */ = {isa = PBXBuildFile; fileRef = D37FB29118B2A66A00032D77 /* NSObject+VimeoMethodCalling.m */; };
+		D37FB29318B2A66A00032D77 /* NSObject+VimeoMethodCalling.m in Sources */ = {isa = PBXBuildFile; fileRef = D37FB29118B2A66A00032D77 /* NSObject+VimeoMethodCalling.m */; };
+		D37FB29618B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D37FB29518B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m */; };
+		D37FB29718B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = D37FB29518B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m */; };
+		D3CAF83718B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAF83618B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m */; };
+		D3CAF83818B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAF83618B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m */; };
+		D3CAF83F18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAF83E18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m */; };
+		D3CAF84018B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CAF83E18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m */; };
+		D3DAC9C318B013FC0036FB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9C218B013FC0036FB0D /* Foundation.framework */; };
+		D3DAC9C518B013FC0036FB0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9C418B013FC0036FB0D /* CoreGraphics.framework */; };
+		D3DAC9C718B013FD0036FB0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9C618B013FD0036FB0D /* UIKit.framework */; };
+		D3DAC9CD18B013FD0036FB0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DAC9CB18B013FD0036FB0D /* InfoPlist.strings */; };
+		D3DAC9CF18B013FD0036FB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DAC9CE18B013FD0036FB0D /* main.m */; };
+		D3DAC9D318B013FD0036FB0D /* BSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DAC9D218B013FD0036FB0D /* BSAppDelegate.m */; };
+		D3DAC9D618B013FD0036FB0D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DAC9D418B013FD0036FB0D /* Main_iPhone.storyboard */; };
+		D3DAC9D918B013FD0036FB0D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3DAC9D718B013FD0036FB0D /* Main_iPad.storyboard */; };
+		D3DAC9DC18B013FD0036FB0D /* BSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DAC9DB18B013FD0036FB0D /* BSViewController.m */; };
+		D3DAC9DE18B013FD0036FB0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3DAC9DD18B013FD0036FB0D /* Images.xcassets */; };
+		D3DAC9E518B013FD0036FB0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9E418B013FD0036FB0D /* XCTest.framework */; };
+		D3DAC9E618B013FD0036FB0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9C218B013FC0036FB0D /* Foundation.framework */; };
+		D3DAC9E718B013FD0036FB0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DAC9C618B013FD0036FB0D /* UIKit.framework */; };
+		D3DAC9EF18B013FD0036FB0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3DAC9ED18B013FD0036FB0D /* InfoPlist.strings */; };
+		D3DAC9FC18B0144B0036FB0D /* BSVimeoURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DAC9FB18B0144B0036FB0D /* BSVimeoURLRequest.m */; };
+		D3DAC9FD18B0144B0036FB0D /* BSVimeoURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DAC9FB18B0144B0036FB0D /* BSVimeoURLRequest.m */; };
+		D3DACA0918B0146D0036FB0D /* BSVimeoAuthorizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */; };
+		D3DACA0A18B0146D0036FB0D /* BSVimeoAuthorizationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3DAC9E818B013FD0036FB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3DAC9B718B013FC0036FB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3DAC9BE18B013FC0036FB0D;
+			remoteInfo = VimeoAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19611416633540ACB6F2AB97 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F53680913F44807A6C1D2A6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D34C8C7218B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+VimeoAccessCredentials.h"; sourceTree = "<group>"; };
+		D34C8C7318B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+VimeoAccessCredentials.m"; sourceTree = "<group>"; };
+		D34C8C7818B455550032BE5A /* BSVImeoURLRequestTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVImeoURLRequestTest.m; sourceTree = "<group>"; };
+		D36978C118B0547F0075B578 /* BSVimeoAccessCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoAccessCredentials.h; sourceTree = "<group>"; };
+		D36978C218B0547F0075B578 /* BSVimeoAccessCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoAccessCredentials.m; sourceTree = "<group>"; };
+		D36978C518B057D00075B578 /* BSVimeoRequestCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoRequestCredentials.h; sourceTree = "<group>"; };
+		D36978C618B057D00075B578 /* BSVimeoRequestCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoRequestCredentials.m; sourceTree = "<group>"; };
+		D36978C918B061B00075B578 /* BSVimeoAuthorizationCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoAuthorizationCredentials.h; sourceTree = "<group>"; };
+		D36978CA18B061B00075B578 /* BSVimeoAuthorizationCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoAuthorizationCredentials.m; sourceTree = "<group>"; };
+		D36978CD18B069250075B578 /* NSObject+WebViewCreation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WebViewCreation.h"; sourceTree = "<group>"; };
+		D36978CE18B069250075B578 /* NSObject+WebViewCreation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WebViewCreation.m"; sourceTree = "<group>"; };
+		D36978D218B06BE40075B578 /* BSVimeoAuthorizationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoAuthorizationControllerDelegate.h; sourceTree = "<group>"; };
+		D37FB28518B2A2D100032D77 /* BSVimeoActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoActivity.h; sourceTree = "<group>"; };
+		D37FB28718B2A32000032D77 /* BSVimeoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoAlbum.h; sourceTree = "<group>"; };
+		D37FB28818B2A33A00032D77 /* BSVimeoCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoCategory.h; sourceTree = "<group>"; };
+		D37FB28918B2A34D00032D77 /* BSVimeoChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoChannel.h; sourceTree = "<group>"; };
+		D37FB28A18B2A36000032D77 /* BSVimeoContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoContact.h; sourceTree = "<group>"; };
+		D37FB28B18B2A37200032D77 /* BSVimeoGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoGroup.h; sourceTree = "<group>"; };
+		D37FB28C18B2A44A00032D77 /* BSVimeoForum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoForum.h; sourceTree = "<group>"; };
+		D37FB28D18B2A46C00032D77 /* BSVimeoPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoPerson.h; sourceTree = "<group>"; };
+		D37FB28E18B2A48200032D77 /* BSVimeoVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoVideo.h; sourceTree = "<group>"; };
+		D37FB28F18B2A49700032D77 /* BSVimeoComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoComment.h; sourceTree = "<group>"; };
+		D37FB29018B2A66A00032D77 /* NSObject+VimeoMethodCalling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+VimeoMethodCalling.h"; path = "../NSObject+VimeoMethodCalling.h"; sourceTree = "<group>"; };
+		D37FB29118B2A66A00032D77 /* NSObject+VimeoMethodCalling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+VimeoMethodCalling.m"; path = "../NSObject+VimeoMethodCalling.m"; sourceTree = "<group>"; };
+		D37FB29418B2C2AF00032D77 /* BSVimeoDeveloperCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoDeveloperCredentials.h; sourceTree = "<group>"; };
+		D37FB29518B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoDeveloperCredentials.m; sourceTree = "<group>"; };
+		D3CAF83518B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BSVimeoAuthorizationCredentials+Adapter.h"; path = "../BSVimeoAuthorizationCredentials+Adapter.h"; sourceTree = "<group>"; };
+		D3CAF83618B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BSVimeoAuthorizationCredentials+Adapter.m"; path = "../BSVimeoAuthorizationCredentials+Adapter.m"; sourceTree = "<group>"; };
+		D3CAF83D18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BSVimeoAccessCredentials+Adapter.h"; path = "../BSVimeoAccessCredentials+Adapter.h"; sourceTree = "<group>"; };
+		D3CAF83E18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "BSVimeoAccessCredentials+Adapter.m"; path = "../BSVimeoAccessCredentials+Adapter.m"; sourceTree = "<group>"; };
+		D3DAC9BF18B013FC0036FB0D /* VimeoAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VimeoAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DAC9C218B013FC0036FB0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D3DAC9C418B013FC0036FB0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D3DAC9C618B013FD0036FB0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D3DAC9CA18B013FD0036FB0D /* VimeoAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VimeoAPI-Info.plist"; sourceTree = "<group>"; };
+		D3DAC9CC18B013FD0036FB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DAC9CE18B013FD0036FB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3DAC9D018B013FD0036FB0D /* VimeoAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VimeoAPI-Prefix.pch"; sourceTree = "<group>"; };
+		D3DAC9D118B013FD0036FB0D /* BSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSAppDelegate.h; sourceTree = "<group>"; };
+		D3DAC9D218B013FD0036FB0D /* BSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSAppDelegate.m; sourceTree = "<group>"; };
+		D3DAC9D518B013FD0036FB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D3DAC9D818B013FD0036FB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D3DAC9DA18B013FD0036FB0D /* BSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSViewController.h; sourceTree = "<group>"; };
+		D3DAC9DB18B013FD0036FB0D /* BSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSViewController.m; sourceTree = "<group>"; };
+		D3DAC9DD18B013FD0036FB0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D3DAC9E318B013FD0036FB0D /* VimeoAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VimeoAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DAC9E418B013FD0036FB0D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D3DAC9EC18B013FD0036FB0D /* VimeoAPITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VimeoAPITests-Info.plist"; sourceTree = "<group>"; };
+		D3DAC9EE18B013FD0036FB0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D3DAC9FA18B0144B0036FB0D /* BSVimeoURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoURLRequest.h; sourceTree = "<group>"; };
+		D3DAC9FB18B0144B0036FB0D /* BSVimeoURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoURLRequest.m; sourceTree = "<group>"; };
+		D3DACA0118B0146D0036FB0D /* BSVimeoAuthorizationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSVimeoAuthorizationController.h; sourceTree = "<group>"; };
+		D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSVimeoAuthorizationController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3DAC9BC18B013FC0036FB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DAC9C518B013FC0036FB0D /* CoreGraphics.framework in Frameworks */,
+				D3DAC9C718B013FD0036FB0D /* UIKit.framework in Frameworks */,
+				D3DAC9C318B013FC0036FB0D /* Foundation.framework in Frameworks */,
+				754F37887A65465987737118 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DAC9E018B013FD0036FB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DAC9E518B013FD0036FB0D /* XCTest.framework in Frameworks */,
+				D3DAC9E718B013FD0036FB0D /* UIKit.framework in Frameworks */,
+				D3DAC9E618B013FD0036FB0D /* Foundation.framework in Frameworks */,
+				BF80CDE80DF14A73AF4C0971 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D34C8C7618B44B9A0032BE5A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				D34C8C7218B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.h */,
+				D34C8C7318B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		D34C8C7718B44C9A0032BE5A /* BSVimeoOAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D36978D118B06AEE0075B578 /* Credentials */,
+				D36978CD18B069250075B578 /* NSObject+WebViewCreation.h */,
+				D36978CE18B069250075B578 /* NSObject+WebViewCreation.m */,
+				D37FB29018B2A66A00032D77 /* NSObject+VimeoMethodCalling.h */,
+				D37FB29118B2A66A00032D77 /* NSObject+VimeoMethodCalling.m */,
+				D3DAC9FA18B0144B0036FB0D /* BSVimeoURLRequest.h */,
+				D3DAC9FB18B0144B0036FB0D /* BSVimeoURLRequest.m */,
+				D36978D218B06BE40075B578 /* BSVimeoAuthorizationControllerDelegate.h */,
+				D3DACA0118B0146D0036FB0D /* BSVimeoAuthorizationController.h */,
+				D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */,
+			);
+			name = BSVimeoOAuth;
+			sourceTree = "<group>";
+		};
+		D36978D118B06AEE0075B578 /* Credentials */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAF84118B32B12003A28B1 /* Credential Adapters */,
+				D37FB29418B2C2AF00032D77 /* BSVimeoDeveloperCredentials.h */,
+				D37FB29518B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m */,
+				D36978C918B061B00075B578 /* BSVimeoAuthorizationCredentials.h */,
+				D36978CA18B061B00075B578 /* BSVimeoAuthorizationCredentials.m */,
+				D36978C518B057D00075B578 /* BSVimeoRequestCredentials.h */,
+				D36978C618B057D00075B578 /* BSVimeoRequestCredentials.m */,
+				D36978C118B0547F0075B578 /* BSVimeoAccessCredentials.h */,
+				D36978C218B0547F0075B578 /* BSVimeoAccessCredentials.m */,
+			);
+			name = Credentials;
+			sourceTree = "<group>";
+		};
+		D37FB28618B2A2DA00032D77 /* Vimeo Object Protocols (UNUSED) */ = {
+			isa = PBXGroup;
+			children = (
+				D37FB28518B2A2D100032D77 /* BSVimeoActivity.h */,
+				D37FB28718B2A32000032D77 /* BSVimeoAlbum.h */,
+				D37FB28818B2A33A00032D77 /* BSVimeoCategory.h */,
+				D37FB28918B2A34D00032D77 /* BSVimeoChannel.h */,
+				D37FB28A18B2A36000032D77 /* BSVimeoContact.h */,
+				D37FB28B18B2A37200032D77 /* BSVimeoGroup.h */,
+				D37FB28C18B2A44A00032D77 /* BSVimeoForum.h */,
+				D37FB28D18B2A46C00032D77 /* BSVimeoPerson.h */,
+				D37FB28E18B2A48200032D77 /* BSVimeoVideo.h */,
+				D37FB28F18B2A49700032D77 /* BSVimeoComment.h */,
+			);
+			name = "Vimeo Object Protocols (UNUSED)";
+			sourceTree = "<group>";
+		};
+		D3CAF84118B32B12003A28B1 /* Credential Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				D3CAF83518B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.h */,
+				D3CAF83618B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m */,
+				D3CAF83D18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.h */,
+				D3CAF83E18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m */,
+			);
+			name = "Credential Adapters";
+			sourceTree = "<group>";
+		};
+		D3DAC9B618B013FC0036FB0D = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9C818B013FD0036FB0D /* VimeoAPI */,
+				D3DAC9EA18B013FD0036FB0D /* VimeoAPITests */,
+				D3DAC9C118B013FC0036FB0D /* Frameworks */,
+				D3DAC9C018B013FC0036FB0D /* Products */,
+				4F53680913F44807A6C1D2A6 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D3DAC9C018B013FC0036FB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9BF18B013FC0036FB0D /* VimeoAPI.app */,
+				D3DAC9E318B013FD0036FB0D /* VimeoAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3DAC9C118B013FC0036FB0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9C218B013FC0036FB0D /* Foundation.framework */,
+				D3DAC9C418B013FC0036FB0D /* CoreGraphics.framework */,
+				D3DAC9C618B013FD0036FB0D /* UIKit.framework */,
+				D3DAC9E418B013FD0036FB0D /* XCTest.framework */,
+				19611416633540ACB6F2AB97 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3DAC9C818B013FD0036FB0D /* VimeoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9D118B013FD0036FB0D /* BSAppDelegate.h */,
+				D3DAC9D218B013FD0036FB0D /* BSAppDelegate.m */,
+				D3DAC9D418B013FD0036FB0D /* Main_iPhone.storyboard */,
+				D3DAC9D718B013FD0036FB0D /* Main_iPad.storyboard */,
+				D3DAC9DA18B013FD0036FB0D /* BSViewController.h */,
+				D3DAC9DB18B013FD0036FB0D /* BSViewController.m */,
+				D34C8C7718B44C9A0032BE5A /* BSVimeoOAuth */,
+				D34C8C7618B44B9A0032BE5A /* Persistence */,
+				D37FB28618B2A2DA00032D77 /* Vimeo Object Protocols (UNUSED) */,
+				D3DAC9DD18B013FD0036FB0D /* Images.xcassets */,
+				D3DAC9C918B013FD0036FB0D /* Supporting Files */,
+			);
+			path = VimeoAPI;
+			sourceTree = "<group>";
+		};
+		D3DAC9C918B013FD0036FB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9CA18B013FD0036FB0D /* VimeoAPI-Info.plist */,
+				D3DAC9CB18B013FD0036FB0D /* InfoPlist.strings */,
+				D3DAC9CE18B013FD0036FB0D /* main.m */,
+				D3DAC9D018B013FD0036FB0D /* VimeoAPI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3DAC9EA18B013FD0036FB0D /* VimeoAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				D34C8C7818B455550032BE5A /* BSVImeoURLRequestTest.m */,
+				D3DAC9EB18B013FD0036FB0D /* Supporting Files */,
+			);
+			path = VimeoAPITests;
+			sourceTree = "<group>";
+		};
+		D3DAC9EB18B013FD0036FB0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3DAC9EC18B013FD0036FB0D /* VimeoAPITests-Info.plist */,
+				D3DAC9ED18B013FD0036FB0D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3DAC9BE18B013FC0036FB0D /* VimeoAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DAC9F418B013FD0036FB0D /* Build configuration list for PBXNativeTarget "VimeoAPI" */;
+			buildPhases = (
+				863DF35848AB4858A3A80BD7 /* Check Pods Manifest.lock */,
+				D3DAC9BB18B013FC0036FB0D /* Sources */,
+				D3DAC9BC18B013FC0036FB0D /* Frameworks */,
+				D3DAC9BD18B013FC0036FB0D /* Resources */,
+				C2607A337A444DE59A0165F1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VimeoAPI;
+			productName = VimeoAPI;
+			productReference = D3DAC9BF18B013FC0036FB0D /* VimeoAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D3DAC9E218B013FD0036FB0D /* VimeoAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3DAC9F718B013FD0036FB0D /* Build configuration list for PBXNativeTarget "VimeoAPITests" */;
+			buildPhases = (
+				4FBF007BFF1F419598587AA7 /* Check Pods Manifest.lock */,
+				D3DAC9DF18B013FD0036FB0D /* Sources */,
+				D3DAC9E018B013FD0036FB0D /* Frameworks */,
+				D3DAC9E118B013FD0036FB0D /* Resources */,
+				C64324896A404882BE4C4A57 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3DAC9E918B013FD0036FB0D /* PBXTargetDependency */,
+			);
+			name = VimeoAPITests;
+			productName = VimeoAPITests;
+			productReference = D3DAC9E318B013FD0036FB0D /* VimeoAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3DAC9B718B013FC0036FB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Brian Semiglia";
+				TargetAttributes = {
+					D3DAC9E218B013FD0036FB0D = {
+						TestTargetID = D3DAC9BE18B013FC0036FB0D;
+					};
+				};
+			};
+			buildConfigurationList = D3DAC9BA18B013FC0036FB0D /* Build configuration list for PBXProject "VimeoAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3DAC9B618B013FC0036FB0D;
+			productRefGroup = D3DAC9C018B013FC0036FB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3DAC9BE18B013FC0036FB0D /* VimeoAPI */,
+				D3DAC9E218B013FD0036FB0D /* VimeoAPITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3DAC9BD18B013FC0036FB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DAC9D918B013FD0036FB0D /* Main_iPad.storyboard in Resources */,
+				D3DAC9DE18B013FD0036FB0D /* Images.xcassets in Resources */,
+				D3DAC9D618B013FD0036FB0D /* Main_iPhone.storyboard in Resources */,
+				D3DAC9CD18B013FD0036FB0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DAC9E118B013FD0036FB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DAC9EF18B013FD0036FB0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4FBF007BFF1F419598587AA7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		863DF35848AB4858A3A80BD7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C2607A337A444DE59A0165F1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C64324896A404882BE4C4A57 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3DAC9BB18B013FC0036FB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3DAC9FC18B0144B0036FB0D /* BSVimeoURLRequest.m in Sources */,
+				D37FB29618B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m in Sources */,
+				D3DAC9DC18B013FD0036FB0D /* BSViewController.m in Sources */,
+				D36978C318B0547F0075B578 /* BSVimeoAccessCredentials.m in Sources */,
+				D3DAC9CF18B013FD0036FB0D /* main.m in Sources */,
+				D36978CF18B069250075B578 /* NSObject+WebViewCreation.m in Sources */,
+				D37FB29218B2A66A00032D77 /* NSObject+VimeoMethodCalling.m in Sources */,
+				D3DAC9D318B013FD0036FB0D /* BSAppDelegate.m in Sources */,
+				D34C8C7418B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m in Sources */,
+				D3CAF83718B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m in Sources */,
+				D36978C718B057D00075B578 /* BSVimeoRequestCredentials.m in Sources */,
+				D36978CB18B061B00075B578 /* BSVimeoAuthorizationCredentials.m in Sources */,
+				D3CAF83F18B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m in Sources */,
+				D3DACA0918B0146D0036FB0D /* BSVimeoAuthorizationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3DAC9DF18B013FD0036FB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D37FB29318B2A66A00032D77 /* NSObject+VimeoMethodCalling.m in Sources */,
+				D34C8C7518B4498C0032BE5A /* NSUserDefaults+VimeoAccessCredentials.m in Sources */,
+				D3CAF84018B3229D003A28B1 /* BSVimeoAccessCredentials+Adapter.m in Sources */,
+				D36978CC18B061B00075B578 /* BSVimeoAuthorizationCredentials.m in Sources */,
+				D34C8C7918B455550032BE5A /* BSVImeoURLRequestTest.m in Sources */,
+				D36978C818B057D00075B578 /* BSVimeoRequestCredentials.m in Sources */,
+				D37FB29718B2C2AF00032D77 /* BSVimeoDeveloperCredentials.m in Sources */,
+				D3CAF83818B319EC003A28B1 /* BSVimeoAuthorizationCredentials+Adapter.m in Sources */,
+				D3DAC9FD18B0144B0036FB0D /* BSVimeoURLRequest.m in Sources */,
+				D36978C418B0547F0075B578 /* BSVimeoAccessCredentials.m in Sources */,
+				D3DACA0A18B0146D0036FB0D /* BSVimeoAuthorizationController.m in Sources */,
+				D36978D018B069250075B578 /* NSObject+WebViewCreation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3DAC9E918B013FD0036FB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3DAC9BE18B013FC0036FB0D /* VimeoAPI */;
+			targetProxy = D3DAC9E818B013FD0036FB0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D3DAC9CB18B013FD0036FB0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DAC9CC18B013FD0036FB0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D3DAC9D418B013FD0036FB0D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DAC9D518B013FD0036FB0D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DAC9D718B013FD0036FB0D /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DAC9D818B013FD0036FB0D /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D3DAC9ED18B013FD0036FB0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3DAC9EE18B013FD0036FB0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D3DAC9F218B013FD0036FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3DAC9F318B013FD0036FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3DAC9F518B013FD0036FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F53680913F44807A6C1D2A6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VimeoAPI/VimeoAPI-Prefix.pch";
+				INFOPLIST_FILE = "VimeoAPI/VimeoAPI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D3DAC9F618B013FD0036FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F53680913F44807A6C1D2A6 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VimeoAPI/VimeoAPI-Prefix.pch";
+				INFOPLIST_FILE = "VimeoAPI/VimeoAPI-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D3DAC9F818B013FD0036FB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F53680913F44807A6C1D2A6 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VimeoAPI.app/VimeoAPI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VimeoAPI/VimeoAPI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VimeoAPITests/VimeoAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D3DAC9F918B013FD0036FB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F53680913F44807A6C1D2A6 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VimeoAPI.app/VimeoAPI";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VimeoAPI/VimeoAPI-Prefix.pch";
+				INFOPLIST_FILE = "VimeoAPITests/VimeoAPITests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3DAC9BA18B013FC0036FB0D /* Build configuration list for PBXProject "VimeoAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DAC9F218B013FD0036FB0D /* Debug */,
+				D3DAC9F318B013FD0036FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DAC9F418B013FD0036FB0D /* Build configuration list for PBXNativeTarget "VimeoAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DAC9F518B013FD0036FB0D /* Debug */,
+				D3DAC9F618B013FD0036FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3DAC9F718B013FD0036FB0D /* Build configuration list for PBXNativeTarget "VimeoAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3DAC9F818B013FD0036FB0D /* Debug */,
+				D3DAC9F918B013FD0036FB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3DAC9B718B013FC0036FB0D /* Project object */;
+}

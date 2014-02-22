@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSViewController.m"
+            timestampString = "414468850.870311"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-vimeoAuthorizationController:didBecomeAuthorizedWithCredentials:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSVimeoAuthorizationCredentials.m"
+            timestampString = "414221521.272412"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "+userAuthorizationURLWithRequestToken:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSVimeoAuthorizationController.m"
+            timestampString = "414467583.652177"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "-accessRequestCredentialsWithTokenFromURL:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSVimeoAccessController.m"
+            timestampString = "414224066.123232"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-videosForUser:withCompletionHandler:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NSObject+VimeoMethodCalling.m"
+            timestampString = "414374245.979313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "+activityExperiencedParametersForUser:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest(VimeoMethodCalling) activityExperiencedParametersForUser:]"
+                  moduleName = "VimeoAPI"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.220575"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest(VimeoMethodCalling) activityExperiencedParametersForUser:]"
+                  moduleName = "VimeoAPITests"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.867719"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NSObject+VimeoMethodCalling.m"
+            timestampString = "414371381.163727"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "+getActivityCommittedByUser:usingCredentials:developerCredentials:andCompletionHandler:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest(VimeoMethodCalling) getActivityCommittedByUser:usingCredentials:developerCredentials:andCompletionHandler:]"
+                  moduleName = "VimeoAPI"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.222041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "169">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__127+[BSVimeoURLRequest(VimeoMethodCalling) getActivityCommittedByUser:usingCredentials:developerCredentials:andCompletionHandler:]_block_invoke"
+                  moduleName = "VimeoAPI"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.222448"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest(VimeoMethodCalling) getActivityCommittedByUser:usingCredentials:developerCredentials:andCompletionHandler:]"
+                  moduleName = "VimeoAPITests"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.868045"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "169">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__127+[BSVimeoURLRequest(VimeoMethodCalling) getActivityCommittedByUser:usingCredentials:developerCredentials:andCompletionHandler:]_block_invoke"
+                  moduleName = "VimeoAPITests"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/NSObject+VimeoMethodCalling.m"
+                  timestampString = "414475550.868433"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "124">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSVimeoURLRequest.m"
+            timestampString = "414473756.747252"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "+valueFromURLEncodedString:forKey:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest valueFromURLEncodedString:forKey:]"
+                  moduleName = "VimeoAPI"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/VimeoAPI/BSVimeoURLRequest.m"
+                  timestampString = "414475126.255521"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest valueFromURLEncodedString:forKey:]"
+                  moduleName = "VimeoAPITests"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/VimeoAPI/BSVimeoURLRequest.m"
+                  timestampString = "414475126.909996"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "109">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VimeoAPI/BSVimeoURLRequest.m"
+            timestampString = "414475157.131591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "+URLRequestWithPath:parameters:token:secret:consumerKey:consumerSecret:"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest URLRequestWithPath:parameters:token:secret:consumerKey:consumerSecret:]"
+                  moduleName = "VimeoAPI"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/VimeoAPI/BSVimeoURLRequest.m"
+                  timestampString = "414475354.897337"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "+[BSVimeoURLRequest URLRequestWithPath:parameters:token:secret:consumerKey:consumerSecret:]"
+                  moduleName = "VimeoAPITests"
+                  urlString = "file:///Users/Brian/Dropbox/VimeoAPI/VimeoAPI/BSVimeoURLRequest.m"
+                  timestampString = "414475355.542844"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
