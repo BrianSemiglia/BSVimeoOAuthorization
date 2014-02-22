@@ -14,7 +14,7 @@ Usage:
   
 Example:
 
-  1.
+1.
     BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
     [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
       dispatch_async(dispatch_get_main_queue(), ^{
@@ -24,7 +24,7 @@ Example:
       });
     }];
 
-  2. 
+2. 
   - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
     BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
     developerCredentials.consumerKey = CONSUMER_KEY;
@@ -32,16 +32,17 @@ Example:
     return developerCredentials;
 }
 
-  3. - (BOOL)application:(UIApplication *)application
-                 openURL:(NSURL *)url
-       sourceApplication:(NSString *)sourceApplication
-              annotation:(id)annotation {
+3.
+  - (BOOL)application:(UIApplication *)application
+              openURL:(NSURL *)url
+    sourceApplication:(NSString *)sourceApplication
+          annotation:(id)annotation {
     
     [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
     return YES;
   }
 
-  4.
+4.
   - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
     didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
