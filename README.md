@@ -40,16 +40,16 @@ Example:
         return YES;
     }
 
-  - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
-    didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
+    - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
+      didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
-    [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
-    [self dismissViewControllerAnimated:YES completion:nil];
-    [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
-                                 usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
-                             developerCredentials:[BSViewController developerCredentials]
-                             andCompletionHandler:^(NSArray *activity) {
+      [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
+      [self dismissViewControllerAnimated:YES completion:nil];
+      [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
+                                  usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
+                              developerCredentials:[BSViewController developerCredentials]
+                              andCompletionHandler:^(NSArray *activity) {
                                  
-                             }];
+                              }];
     }
 
