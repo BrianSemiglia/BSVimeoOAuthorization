@@ -22,22 +22,23 @@ Example:
         [self presentViewController:navigationController animated:YES completion:nil];
       });
     }];
-
-  - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
-    BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
-    developerCredentials.consumerKey = CONSUMER_KEY;
-    developerCredentials.consumerSecret = CONSUMER_SECRET;
-    return developerCredentials;
-  }
-
-  - (BOOL)application:(UIApplication *)application
-              openURL:(NSURL *)url
-    sourceApplication:(NSString *)sourceApplication
-          annotation:(id)annotation {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
-    return YES;
-  }
+    
+    - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
+      BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
+      developerCredentials.consumerKey = CONSUMER_KEY;
+      developerCredentials.consumerSecret = CONSUMER_SECRET;
+      return developerCredentials;
+    }
+
+    - (BOOL)application:(UIApplication *)application
+                openURL:(NSURL *)url
+      sourceApplication:(NSString *)sourceApplication
+             annotation:(id)annotation {
+    
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
+        return YES;
+    }
 
   - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
     didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
