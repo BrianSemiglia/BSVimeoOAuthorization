@@ -16,14 +16,14 @@ Example:
 
 1. Present authorization web view.
 
-    BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
-    [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
-      dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *viewController = [NSObject authorizationWebViewControllerWithURL:URL];
-        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-        [self presentViewController:navigationController animated:YES completion:nil];
-      });
-    }];
+      BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
+      [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+          UIViewController *viewController = [NSObject authorizationWebViewControllerWithURL:URL];
+          UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+          [self presentViewController:navigationController animated:YES completion:nil];
+        });
+      }];
     
 
 2. Provide consumer key and secret.  
