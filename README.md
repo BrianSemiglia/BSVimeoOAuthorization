@@ -26,7 +26,7 @@ Present authorization web view.
     }];
     
 
-Provide consumer key and secret.  
+Provide consumer key and secret in BSVimeoAuthorizationController delegate.  
 
     - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
       BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
@@ -35,7 +35,7 @@ Provide consumer key and secret.
       return developerCredentials;
     }
 
-Forward authorization web view callback URL.
+Override appDelegate method and forward authorization web view callback URL.
 
     - (BOOL)application:(UIApplication *)application
                 openURL:(NSURL *)url
@@ -46,7 +46,7 @@ Forward authorization web view callback URL.
       return YES;
     }
 
-Save credentials and use to make API method calls.
+Save credentials from BSVimeoAuthorizationController callback and use them to make API method calls.
 
     - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
       didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
