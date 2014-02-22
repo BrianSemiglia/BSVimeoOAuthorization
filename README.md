@@ -39,7 +39,6 @@ Example:
     return YES;
   }
 
-4.
   - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
     didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
@@ -51,5 +50,5 @@ Example:
                              andCompletionHandler:^(NSArray *activity) {
                                  
                              }];
-}
+    }
 
