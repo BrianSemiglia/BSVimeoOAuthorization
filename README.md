@@ -14,7 +14,7 @@ Usage:
   
 Example:
 
-1. Present authorization web view.
+Present authorization web view.
 
       BSVimeoAuthorizationController *vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
       [self.vimeoAuthorizationController requestUserAuthorizationURLWithCompletionHandler:^(NSURL *URL) {
@@ -26,13 +26,13 @@ Example:
       }];
     
 
-2. Provide consumer key and secret.  
-    - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
-      BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
-      developerCredentials.consumerKey = CONSUMER_KEY;
-      developerCredentials.consumerSecret = CONSUMER_SECRET;
-      return developerCredentials;
-    }
+Provide consumer key and secret.  
+      - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
+        BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
+        developerCredentials.consumerKey = CONSUMER_KEY;
+        developerCredentials.consumerSecret = CONSUMER_SECRET;
+        return developerCredentials;
+      }
 
 3. Forward authorization web view callback URL.
     - (BOOL)application:(UIApplication *)application
