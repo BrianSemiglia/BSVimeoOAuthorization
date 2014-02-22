@@ -27,6 +27,7 @@ Present authorization web view.
     
 
 Provide consumer key and secret.  
+
       - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
         BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
         developerCredentials.consumerKey = CONSUMER_KEY;
@@ -34,27 +35,29 @@ Provide consumer key and secret.
         return developerCredentials;
       }
 
-3. Forward authorization web view callback URL.
-    - (BOOL)application:(UIApplication *)application
-                openURL:(NSURL *)url
-      sourceApplication:(NSString *)sourceApplication
-             annotation:(id)annotation {
-    
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
-        return YES;
-    }
+Forward authorization web view callback URL.
 
-4. Save credentials and use to make API method calls.
+      - (BOOL)application:(UIApplication *)application
+                  openURL:(NSURL *)url
+        sourceApplication:(NSString *)sourceApplication
+               annotation:(id)annotation {
+    
+          [[NSNotificationCenter defaultCenter] postNotificationName:@"didRecieveUserAuthorizationWithURL" object:url];
+          return YES;
+      }
+
+Save credentials and use to make API method calls.
+
     - (void)vimeoAuthorizationController:(BSVimeoAuthorizationController *)controller
       didBecomeAuthorizedWithCredentials:(BSVimeoAccessCredentials *)credentials {
     
-      [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
-      [self dismissViewControllerAnimated:YES completion:nil];
-      [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
-                                  usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
-                              developerCredentials:[BSViewController developerCredentials]
-                              andCompletionHandler:^(NSArray *activity) {
+        [[NSUserDefaults standardUserDefaults] saveCredentials:credentials];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [BSVimeoURLRequest getActivityCommittedByUser:@"thinkspotting"
+                                     usingCredentials:[[NSUserDefaults standardUserDefaults] savedCredentials]
+                                 developerCredentials:[BSViewController developerCredentials]
+                                 andCompletionHandler:^(NSArray *activity) {
                                  
                               }];
-    }
+      }
 
