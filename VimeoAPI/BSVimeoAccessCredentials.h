@@ -22,11 +22,4 @@
                   consumerKey:(NSString *)consumerKey
             andConsumerSecret:(NSString *)consumerSecret;
 
-+ (void)getAccessCredentialsWithToken:(NSString *)token
-                               secret:(NSString *)secret
-                          consumerKey:(NSString *)consumerKey
-                       consumerSecret:(NSString *)consumerSecret
-                             verifier:(NSString *)verifier
-                 andCompletionHandler:(void (^)(BSVimeoAccessCredentials *))completionHandler;
-
 @end
