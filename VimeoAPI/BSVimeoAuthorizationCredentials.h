@@ -14,14 +14,5 @@
 @property (nonatomic, readonly, copy) NSString *secret;
 
 - (id)initWithURL:(NSURL *)URL andSecret:(NSString *)secret;
-+ (BSVimeoAuthorizationCredentials *)credentialsFromURLEncodedString:(NSString *)URLEncodedString;
-
-/**
- Returns a URL used for presenting a login web view to the user.
- @param The request token that was returned by the -requestTokenURLRequestWithDeveloperCredentials call.
- */
-+ (void)authorizationCredentialsWithConsumerKey:(NSString *)consumerKey
-                                 consumerSecret:(NSString *)consumerSecret
-                           andCompletionHandler:(void (^)(BSVimeoAuthorizationCredentials *authorizationCredentials))completionHandler;
 
 @end

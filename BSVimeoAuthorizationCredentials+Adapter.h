@@ -11,6 +11,12 @@
 
 @interface BSVimeoAuthorizationCredentials (Adapter)
 
++ (BSVimeoAuthorizationCredentials *)credentialsFromURLEncodedString:(NSString *)URLEncodedString;
+
 + (void)authorizationCredentialsWithDeveloperCredentials:(BSVimeoDeveloperCredentials *)developerCredentials
                                     andCompletionHandler:(void (^)(BSVimeoAuthorizationCredentials *credentials))completionHandler;
+
++ (void)authorizationCredentialsWithConsumerKey:(NSString *)consumerKey
+                                 consumerSecret:(NSString *)consumerSecret
+                           andCompletionHandler:(void (^)(BSVimeoAuthorizationCredentials *authorizationCredentials))completionHandler;
 @end
