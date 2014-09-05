@@ -10,7 +10,9 @@
 
 @interface BSVimeoDeveloperCredentials : NSObject
 
-@property (nonatomic, copy) NSString *consumerKey;
-@property (nonatomic, copy) NSString *consumerSecret;
+@property (nonatomic, readonly, copy) NSString *consumerKey;
+@property (nonatomic, readonly, copy) NSString *consumerSecret;
+
+- (instancetype)initWithConsumerKey:(NSString *)consumerKey andConsumerSecret:(NSString *)consumerSecret;
 
 @end

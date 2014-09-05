@@ -39,10 +39,7 @@
 }
 
 + (BSVimeoDeveloperCredentials *)developerCredentials {
-    BSVimeoDeveloperCredentials *developerCredentials = [[BSVimeoDeveloperCredentials alloc] init];
-    developerCredentials.consumerKey = CONSUMER_KEY;
-    developerCredentials.consumerSecret = CONSUMER_SECRET;
-    return developerCredentials;
+    return [[BSVimeoDeveloperCredentials alloc] initWithConsumerKey:CONSUMER_KEY andConsumerSecret:CONSUMER_SECRET];
 }
 
 - (BSVimeoDeveloperCredentials *)developerCredentialsForVimeoAuthorizationController:(BSVimeoAuthorizationController *)controller {
