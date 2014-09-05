@@ -12,10 +12,10 @@
 
 @interface BSVimeoAccessCredentials : NSObject <NSCoding>
 
-@property (nonatomic, copy) NSString *token;
-@property (nonatomic, copy) NSString *secret;
-@property (nonatomic, copy) NSString *consumerKey;
-@property (nonatomic, copy) NSString *consumerSecret;
+@property (nonatomic, readonly, copy) NSString *token;
+@property (nonatomic, readonly, copy) NSString *secret;
+@property (nonatomic, readonly, copy) NSString *consumerKey;
+@property (nonatomic, readonly, copy) NSString *consumerSecret;
 
 - (BOOL)areValid;
 

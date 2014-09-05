@@ -10,6 +10,15 @@
 #import "BSVimeoURLRequest.h"
 #import "BSVimeoDeveloperCredentials.h"
 
+@interface BSVimeoAccessCredentials ()
+
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *secret;
+@property (nonatomic, copy) NSString *consumerKey;
+@property (nonatomic, copy) NSString *consumerSecret;
+
+@end
+
 @implementation BSVimeoAccessCredentials
 
 - (id)initWithToken:(NSString *)token

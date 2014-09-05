@@ -10,8 +10,12 @@
 #import "BSVimeoURLRequest.h"
 
 @interface BSVimeoAuthorizationCredentials ()
+
 @property (nonatomic, copy) NSURL *URL;
 @property (nonatomic, copy) NSString *secret;
+
++ (NSURL *)userAuthorizationURLFromURLEncodedString:(NSString *)URLEncodedString;
+
 @end
 
 @implementation BSVimeoAuthorizationCredentials

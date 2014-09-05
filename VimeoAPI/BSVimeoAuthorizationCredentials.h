@@ -14,7 +14,6 @@
 @property (nonatomic, readonly, copy) NSString *secret;
 
 - (id)initWithURL:(NSURL *)URL andSecret:(NSString *)secret;
-+ (NSURL *)userAuthorizationURLFromURLEncodedString:(NSString *)URLEncodedString;
 + (BSVimeoAuthorizationCredentials *)credentialsFromURLEncodedString:(NSString *)URLEncodedString;
 
 /**
