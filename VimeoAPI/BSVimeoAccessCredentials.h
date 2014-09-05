@@ -17,9 +17,6 @@
 
 - (BOOL)areValid;
 
-- (id)initWithToken:(NSString *)token
-          andSecret:(NSString *)secret;
-
 - (instancetype)initWithToken:(NSString *)token
                        secret:(NSString *)secret
                   consumerKey:(NSString *)consumerKey

@@ -34,17 +34,6 @@
     return self;
 }
 
-- (id)initWithToken:(NSString *)token
-          andSecret:(NSString *)secret {
-    
-    self = [super init];
-    if (self) {
-        _token = token;
-        _secret = secret;
-    }
-    return self;
-}
-
 - (void)encodeWithCoder:(NSCoder *)encoder {
     [encoder encodeObject:self.token forKey:@"token"];
     [encoder encodeObject:self.secret forKey:@"secret"];
