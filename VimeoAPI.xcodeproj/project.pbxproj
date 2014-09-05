@@ -161,9 +161,7 @@
 				D37FB29118B2A66A00032D77 /* NSObject+VimeoMethodCalling.m */,
 				D3DAC9FA18B0144B0036FB0D /* BSVimeoURLRequest.h */,
 				D3DAC9FB18B0144B0036FB0D /* BSVimeoURLRequest.m */,
-				D36978D218B06BE40075B578 /* BSVimeoAuthorizationControllerDelegate.h */,
-				D3DACA0118B0146D0036FB0D /* BSVimeoAuthorizationController.h */,
-				D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */,
+				D381046319BA530D00F388CA /* Vimeo Authorization Controller */,
 			);
 			name = BSVimeoOAuth;
 			sourceTree = "<group>";
@@ -199,6 +197,16 @@
 				D37FB28F18B2A49700032D77 /* BSVimeoComment.h */,
 			);
 			name = "Vimeo Object Protocols (UNUSED)";
+			sourceTree = "<group>";
+		};
+		D381046319BA530D00F388CA /* Vimeo Authorization Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D36978D218B06BE40075B578 /* BSVimeoAuthorizationControllerDelegate.h */,
+				D3DACA0118B0146D0036FB0D /* BSVimeoAuthorizationController.h */,
+				D3DACA0218B0146D0036FB0D /* BSVimeoAuthorizationController.m */,
+			);
+			name = "Vimeo Authorization Controller";
 			sourceTree = "<group>";
 		};
 		D3CAF84118B32B12003A28B1 /* Credential Adapters */ = {

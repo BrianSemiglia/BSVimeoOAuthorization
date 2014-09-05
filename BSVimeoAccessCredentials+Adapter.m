@@ -38,4 +38,13 @@
     return @"/api/rest/v2";
 }
 
++ (BSVimeoAccessCredentials *)credentialsFromURLEncodedString:(NSString *)string
+                                      andDeveloperCredentials:(BSVimeoDeveloperCredentials *)developerCredentials {
+    
+    NSString *token = [BSVimeoURLRequest tokenFromURLEncodedString:string];
+    NSString *secret = [BSVimeoURLRequest secretFromURLEncodedString:string];
+    BSVimeoAccessCredentials *credentials = [[BSVimeoAccessCredentials alloc] initWithToken:token secret:secret consumerKey:developerCredentials.consumerKey andConsumerSecret:developerCredentials.consumerSecret];
+    return credentials;
+}
+
 @end

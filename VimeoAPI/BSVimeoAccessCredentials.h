@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@class BSVimeoDeveloperCredentials;
-
 @interface BSVimeoAccessCredentials : NSObject <NSCoding>
 
 @property (nonatomic, readonly, copy) NSString *token;
@@ -22,8 +20,10 @@
 - (id)initWithToken:(NSString *)token
           andSecret:(NSString *)secret;
 
-+ (BSVimeoAccessCredentials *)credentialsFromURLEncodedString:(NSString *)string
-                                      andDeveloperCredentials:(BSVimeoDeveloperCredentials *)developerCredentials;
+- (instancetype)initWithToken:(NSString *)token
+                       secret:(NSString *)secret
+                  consumerKey:(NSString *)consumerKey
+            andConsumerSecret:(NSString *)consumerSecret;
 
 + (void)getAccessCredentialsWithToken:(NSString *)token
                                secret:(NSString *)secret

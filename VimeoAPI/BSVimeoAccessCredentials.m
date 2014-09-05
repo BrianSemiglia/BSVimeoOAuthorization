@@ -8,7 +8,6 @@
 
 #import "BSVimeoAccessCredentials.h"
 #import "BSVimeoURLRequest.h"
-#import "BSVimeoDeveloperCredentials.h"
 
 @interface BSVimeoAccessCredentials ()
 
@@ -20,6 +19,20 @@
 @end
 
 @implementation BSVimeoAccessCredentials
+
+- (instancetype)initWithToken:(NSString *)token
+                       secret:(NSString *)secret
+                  consumerKey:(NSString *)consumerKey
+            andConsumerSecret:(NSString *)consumerSecret {
+    self = [super init];
+    if (self) {
+        _token = token;
+        _secret = secret;
+        _consumerKey = consumerKey;
+        _consumerSecret = consumerSecret;
+    }
+    return self;
+}
 
 - (id)initWithToken:(NSString *)token
           andSecret:(NSString *)secret {
@@ -55,19 +68,6 @@
         return YES;
     }
     return NO;
-}
-
-+ (BSVimeoAccessCredentials *)credentialsFromURLEncodedString:(NSString *)string
-                                      andDeveloperCredentials:(BSVimeoDeveloperCredentials *)developerCredentials {
-    
-    NSString *token = [BSVimeoURLRequest tokenFromURLEncodedString:string];
-    NSString *secret = [BSVimeoURLRequest secretFromURLEncodedString:string];
-    BSVimeoAccessCredentials *credentials = [[BSVimeoAccessCredentials alloc] init];
-    credentials.token = token;
-    credentials.secret = secret;
-    credentials.consumerKey = developerCredentials.consumerKey;
-    credentials.consumerSecret = developerCredentials.consumerSecret;
-    return credentials;
 }
 
 /**

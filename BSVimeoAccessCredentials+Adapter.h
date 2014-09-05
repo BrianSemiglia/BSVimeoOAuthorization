@@ -23,4 +23,7 @@
 + (NSURLRequest *)methodURLRequestWithAccessCredentials:(BSVimeoAccessCredentials *)accessCredentials
                                           andParameters:(NSDictionary *)parameters;
 
++ (BSVimeoAccessCredentials *)credentialsFromURLEncodedString:(NSString *)string
+                                      andDeveloperCredentials:(BSVimeoDeveloperCredentials *)developerCredentials;
+
 @end
