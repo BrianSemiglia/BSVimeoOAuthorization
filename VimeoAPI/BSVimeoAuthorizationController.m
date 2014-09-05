@@ -73,15 +73,14 @@
 }
 
 - (void)setAuthorizationState:(VimeoAccessAuthorizationState)authorizationState {
-    if (_authorizationState == authorizationState) {
-        return;
-    }
-    _authorizationState = authorizationState;
-    if (authorizationState == VimeoAccessControllerUnauthorized) {
-        if ([self.delegate respondsToSelector:@selector(vimeoAuthorizationController:willInvalidateCredentials:)]) {
-            [self.delegate vimeoAuthorizationController:self willInvalidateCredentials:self.accessCredentials];
+    if (_authorizationState != authorizationState) {
+        _authorizationState = authorizationState;
+        if (authorizationState == VimeoAccessControllerUnauthorized) {
+            if ([self.delegate respondsToSelector:@selector(vimeoAuthorizationController:willInvalidateCredentials:)]) {
+                [self.delegate vimeoAuthorizationController:self willInvalidateCredentials:self.accessCredentials];
+            }
+            self.accessCredentials = nil;
         }
-        self.accessCredentials = nil;
     }
 }
 
