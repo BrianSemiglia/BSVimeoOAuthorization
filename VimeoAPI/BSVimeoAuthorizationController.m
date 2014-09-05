@@ -89,12 +89,11 @@
     NSString *token = [BSVimeoURLRequest tokenFromURLEncodedString:URL.absoluteString];
     NSString *verifier = [BSVimeoURLRequest verifierFromURLEncodedString:URL.absoluteString];
     BSVimeoDeveloperCredentials *developerCredentials = [self.delegate developerCredentialsForVimeoAuthorizationController:self];
-    BSVimeoRequestCredentials *accessRequestCredentials = [[BSVimeoRequestCredentials alloc] init];
-    accessRequestCredentials.token = token;
-    accessRequestCredentials.secret = self.authorizationCredentials.secret;
-    accessRequestCredentials.verifier = verifier;
-    accessRequestCredentials.consumerKey = developerCredentials.consumerKey;
-    accessRequestCredentials.consumerSecret = developerCredentials.consumerSecret;
+    BSVimeoRequestCredentials *accessRequestCredentials = [[BSVimeoRequestCredentials alloc] initWithToken:token
+                                                                                                  verifier:verifier
+                                                                                                    secret:self.authorizationCredentials.secret
+                                                                                               consumerKey:developerCredentials.consumerKey
+                                                                                         andConsumerSecret:developerCredentials.consumerSecret];
     return accessRequestCredentials;
 }
 

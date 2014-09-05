@@ -11,28 +11,40 @@
 #import "BSVimeoAccessCredentials.h"
 #import "BSVimeoDeveloperCredentials.h"
 
+@interface BSVimeoRequestCredentials ()
+
+@property (nonatomic, copy) NSString *token;
+@property (nonatomic, copy) NSString *verifier;
+@property (nonatomic, copy) NSString *secret;
+@property (nonatomic, copy) NSString *consumerKey;
+@property (nonatomic, copy) NSString *consumerSecret;
+
+@end
+
 @implementation BSVimeoRequestCredentials
+
+- (instancetype)initWithToken:(NSString *)token
+                     verifier:(NSString *)verifier
+                       secret:(NSString *)secret
+                  consumerKey:(NSString *)consumerKey
+            andConsumerSecret:(NSString *)consumerSecret {
+    
+    self = [super init];
+    if (self) {
+        _token = token;
+        _verifier = verifier;
+        _secret = secret;
+        _consumerKey = consumerKey;
+        _consumerSecret = consumerSecret;
+    }
+    return self;
+}
 
 - (BOOL)areValid {
     if (self.token && self.secret && self.verifier) {
         return YES;
     }
     return NO;
-}
-
-+ (BSVimeoRequestCredentials *)accessRequestCredentialsWithToken:(NSString *)token
-                                                          secret:(NSString *)secret
-                                                        verifier:(NSString *)verifier
-                                                     consumerKey:(NSString *)consumerKey
-                                               andConsumerSecret:(NSString *)consumerSecret {
-    
-    BSVimeoRequestCredentials *credentials = [[BSVimeoRequestCredentials alloc] init];
-    credentials.token = token;
-    credentials.verifier = verifier;
-    credentials.secret = secret;
-    credentials.consumerKey = consumerKey;
-    credentials.consumerSecret = consumerSecret;
-    return credentials;
 }
 
 @end
