@@ -66,11 +66,10 @@
 }
 
 - (BSVimeoAuthorizationController *)vimeoAuthorizationController {
-    if (_vimeoAuthorizationController) {
-        return _vimeoAuthorizationController;
+    if (!_vimeoAuthorizationController) {
+        _vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
+        _vimeoAuthorizationController.delegate = self;
     }
-    _vimeoAuthorizationController = [[BSVimeoAuthorizationController alloc] init];
-    _vimeoAuthorizationController.delegate = self;
     return _vimeoAuthorizationController;
 }
 
