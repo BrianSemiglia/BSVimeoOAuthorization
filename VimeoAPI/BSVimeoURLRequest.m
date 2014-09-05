@@ -55,11 +55,6 @@
 
 + (NSString *)valueFromURLEncodedString:(NSString *)string
                                  forKey:(NSString *)key {
-    /* Example:
-     candyclock://?oauth_token=448bb1d1a1c586b50cca0461cd81955d,
-     oauth_token_secret=2ad4769c8011181213e1c8052166d32a43a1fa95,
-     oauth_callback_confirmed=true
-     */
     
     NSURL *URL = [NSURL URLWithString:string];
     if (URL.scheme) {
@@ -75,7 +70,6 @@
     NSString *targetKeyValueString = nil;
     for (NSString *keyValueString in keyValues) {
         if ([keyValueString hasPrefix:[NSString stringWithFormat:@"%@=", key]]) {
-            // @"oauth_token=448bb1d1a1c586b50cca0461cd81955d"
             targetKeyValueString = keyValueString;
             break;
         }
@@ -84,7 +78,6 @@
     if (!targetKeyValueString) {
         return nil;
     }
-    // @[oauth_token, 448bb1d1a1c586b50cca0461cd81955d]
     NSArray *keyValue = [targetKeyValueString componentsSeparatedByString:@"="];
     if (keyValue.count < 2) {
         return nil;
