@@ -9,6 +9,11 @@
 #import "BSVimeoAuthorizationCredentials.h"
 #import "BSVimeoURLRequest.h"
 
+@interface BSVimeoAuthorizationCredentials ()
+@property (nonatomic, copy) NSURL *URL;
+@property (nonatomic, copy) NSString *secret;
+@end
+
 @implementation BSVimeoAuthorizationCredentials
 
 - (id)initWithURL:(NSURL *)URL

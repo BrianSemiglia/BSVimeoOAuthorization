@@ -10,8 +10,8 @@
 
 @interface BSVimeoAuthorizationCredentials : NSObject
 
-@property (nonatomic, copy) NSURL *URL;
-@property (nonatomic, copy) NSString *secret;
+@property (nonatomic, readonly, copy) NSURL *URL;
+@property (nonatomic, readonly, copy) NSString *secret;
 
 - (id)initWithURL:(NSURL *)URL andSecret:(NSString *)secret;
 + (NSURL *)userAuthorizationURLFromURLEncodedString:(NSString *)URLEncodedString;
@@ -20,7 +20,6 @@
 /**
  Returns a URL used for presenting a login web view to the user.
  @param The request token that was returned by the -requestTokenURLRequestWithDeveloperCredentials call.
- @discussion
  */
 + (void)authorizationCredentialsWithConsumerKey:(NSString *)consumerKey
                                  consumerSecret:(NSString *)consumerSecret
