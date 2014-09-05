@@ -14,6 +14,7 @@
 #import "BSVimeoDeveloperCredentials.h"
 #import "NSUserDefaults+VimeoAccessCredentials.h"
 
+#error Make sure to define your key/secret.
 #define CONSUMER_KEY @""
 #define CONSUMER_SECRET @""
 
